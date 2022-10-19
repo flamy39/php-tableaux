@@ -12,7 +12,6 @@ foreach ($equipes as $equipe) {
         break;
     }
 }
-
 if ($trouve) {
     echo "$equipeRecherche est présente !";
 } else {
@@ -20,3 +19,8 @@ if ($trouve) {
 }
 
 // version sans boucle
+if (in_array($equipeRecherche,$equipes)) {
+    echo "$equipeRecherche est présente !";
+} else {
+    echo "$equipeRecherche n'est pas présente !";
+}
